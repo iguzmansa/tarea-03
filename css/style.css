@@ -1,0 +1,246 @@
+*{
+    padding: 0px; /*borde*/
+    margin: 0px; /*Etiqueta y todas sus etiquetas*/
+    box-sizing: border-box;
+}
+
+body{
+    background: #f9f9f7 url('../images/background.png') repeat-x;
+    background-size: 210px;
+    font-size: 11px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    color: #8c8c73;
+}
+a {
+    color: #ff7800;
+    text-decoration: underline;
+}
+a :hover{
+    text-decoration: none;
+}
+
+#logo h1 {
+font-size: 0.5em;
+}
+
+p{
+    margin-bottom: 14px;
+    text-align: justify;
+}
+/*position saber para que sirve y como se hace, ha que decirle en qe posicion se quiere*/
+img.picA{
+position: relative;
+top: -2px;
+width: 210px;
+height: 300px;
+/*Contenido de la caja y su borde*/
+padding: 8px;
+}
+
+img.picB{
+    position: relative;
+    top: -2px;
+    width: 60px;
+    height: 60px;
+    padding: 7px;
+    }
+
+    /*importante float*/
+
+img.floatleft{
+    float: left;
+
+}
+
+img.floatright{
+    float: right;
+
+}
+
+ul.linklist{
+    list-style: none;
+}
+
+/*cuando dejo espacio hago referencia a una misma etiqueta, osea una contiene a la otra
+div .linklist{
+color: red;
+}*/
+ul.linklist li {
+   border-top: solid 1px #eeeeee; 
+   padding-top: 5px;
+   margin: 5px 0px 0px 0px;
+}
+
+
+ul.linklist li.first {
+    border-top: 0px; 
+    padding-top: 0px;
+    margin:  0px;
+ }
+
+/*id # class .*/
+#outer{
+    position: relative;
+    width: 880px;
+    margin: 0px auto;
+    margin-top: 10px;
+    background: #fff;
+    border: initial;
+    overflow: overlay;
+
+    /*overflow investigar, el overlay sobrepone*/
+}
+
+#header{
+    max-width: 100%;
+    height: 250px;
+}
+
+.caja{
+    position: relative;
+    display: inline-block;
+}
+
+.texto{
+    position: absolute;
+    top :30px;
+    left: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color :green;
+}
+
+#header #splash{
+float: left;
+width: 880px;
+max-width: 100%;
+height: 250px;
+
+}
+
+/*#header #logo h1{
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+
+#header #logo sup{
+color: #fce2ca;
+}*/
+
+#principalcontent{
+    width:100%;
+    background-color: white;
+}
+
+#secondarycontent{
+    width: 74%;
+   
+    float: right;
+    line-height: normal;
+}
+
+#primarycontent{
+    width: 25%;
+    float: left;
+    margin-left: 3px;
+
+  
+}
+
+#secondarycontent h3{
+    font-size: 22px;
+    line-height: 40px;
+    color: #1b1b19;
+    letter-spacing: -1px;
+    padding: 0px 0px 10px 10px;
+    margin-bottom: 20px;
+}
+
+#secondarycontent .content{
+  
+    padding: 0px, 0px, 10px, 10px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 14px;
+}
+
+#primarycontent h3 {
+    font-size: 22px;
+    line-height: 40px;
+    color: #191b19;
+    letter-spacing: -1px;
+    padding: 0px, 0px, 10px, 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+}
+#primarycontent h2 {
+    font-size: 18px;
+    line-height: 20px;
+    color: #1a8f1a;
+    letter-spacing: -1px;
+    padding: 0px, 0px, 10px, 15px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+#secondarycontent h2 {
+    font-size: 18px;
+    line-height: 40px;
+    color: #1a8f1a;
+    letter-spacing: -1px;
+    padding: 0px, 0px, 10px, 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    
+}
+
+#primarycontent .post {
+   
+    margin-bottom: 30px;
+}
+
+#primarycontent .post .content {
+   
+    margin-bottom: 20px;
+    padding: 0px 15px;
+    text-align: justify;
+    margin-left: 5px;
+}
+#primarycontent .post .footer {
+   
+    text-align: right;
+    height: 34px;
+    margin-top:px;
+}
+#secondarycontent .post .content {
+   
+    margin-bottom: 20px;
+    padding: 0px 15px;
+    text-align: justify;
+    margin-left: 5px;
+}
+#footer{
+    /*clear investigar*/
+    clear: both;
+    height:35px;
+    width: 880px;
+    text-align: center;
+    color: #0ac238;
+    padding: 5px;
+    background-color: #488000;
+ }
+ 
+ #footer #container .principal{
+    float: center ;
+    color: rgb(221, 217, 217);
+    border-right: 1px solid rgb(238, 243, 237);
+    text-align: center;
+    padding: 11px 25px;
+}
+
+
+ 
